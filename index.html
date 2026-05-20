@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azlearner Training Application</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+        margin: 0;
+        padding: 24px;
+      }
+
+      .card {
+        max-width: 640px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      p {
+        color: #374151;
+      }
+
+      .field {
+        margin-bottom: 14px;
+      }
+
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      input,
+      select,
+      textarea,
+      button {
+        width: 100%;
+        box-sizing: border-box;
+        font: inherit;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 10px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+      }
+
+      textarea {
+        min-height: 110px;
+        resize: vertical;
+      }
+
+      button {
+        padding: 12px;
+        background: #2563eb;
+        color: #fff;
+        border: 0;
+        border-radius: 8px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #1d4ed8;
+      }
+
+      .note {
+        font-size: 0.92rem;
+        color: #4b5563;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Join Azlearner Web & App Development Training</h1>
+      <p>
+        Applications are now open for the Azlearner web and app development training happening this Sunday.
+        Complete the form below to apply.
+      </p>
+
+      <form action="mailto:apply@azlearner.me" method="post" enctype="text/plain">
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" required />
+        </div>
+
+        <div class="field">
+          <label for="track">Preferred Track</label>
+          <select id="track" name="track" required>
+            <option value="" selected disabled>Select a track</option>
+            <option value="Web Development">Web Development</option>
+            <option value="App Development">App Development</option>
+            <option value="Both">Both</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="motivation">Why do you want to join?</label>
+          <textarea id="motivation" name="motivation" required></textarea>
+        </div>
+
+        <button type="submit">Submit Application</button>
+      </form>
+
+      <p class="note">On submit, your application is forwarded to apply@azlearner.me via your email client.</p>
+    </main>
+  </body>
+</html>
